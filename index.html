@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practicas 2,3,4</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Practicas</h1>
+        </header>
+
+        <!--Seleccion de trabajo-->
+        <div class="work-select">
+            <h2>Selecciona una tarea</h2>
+            <form id="select-work">
+                <label for="work-selector">Practica: </label>
+                <select id="work-selector" name="work">
+                    <option value disabled selected>Elija una opcion</option>
+                    <option value="factorial">Numero factorial</option>
+                    <option value="fibonacci">Fibonacci</option>
+                    <option value="mcd">MCD</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="container">
+            <div class="forms">
+
+                <!--formulario de numero factorial-->
+                <div class="form-factorial">
+                    <form id="factorial">
+                        <label for>Inserte numero un:
+                            <input type="number" name="factorial"
+                                id="factorial-number">
+                        </label>
+                        <button type="submit">Calcular</button>
+                        <p>Resultado: <span id="resultado-factorial"></span> </p>
+                    </form>
+                </div>
+
+                <div class="form-fibonacci">
+                    <form id="fibonacci">
+                        <label for="fibonacci">Inserte un numero: 
+                            <input type="number" id="fibonacci-number" name="fibonacci">
+                        </label>
+                        <button type="submit">Calcular</button>
+                        <p>Resultado: <span id="resultado-fibonacci"></span></p>
+                    </form>
+                </div>
+
+                <div class="form-mcd">
+                    <form id="mcd">
+                        <label for="mcd-1">Inserte el primer numero:
+                            <input type="number" name="mcd1" id="mcd1">
+                        </label>
+                        <label for="mcd-2">Inserte el segundo numero:
+                            <input type="number" name="mcd2" id="mcd2">
+                        </label>
+                        <button type="submit">Calcular</button>
+                        <p><span id="resultado-mcd"></span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" type="module"></script>
+    </body>
+</html>
