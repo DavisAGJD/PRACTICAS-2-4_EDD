@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Practicas 2,3,4</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
 
@@ -27,35 +28,39 @@
 
         <div class="container">
             <div class="forms">
-
                 <!--formulario de numero factorial-->
-                <div class="form-factorial">
+                <div class="form-factorial" id="form-factorial">
                     <form id="factorial">
+                        <h2>Calcular numero factorial</h2>
                         <label for>Inserte numero un:
                             <input type="number" name="factorial"
                                 id="factorial-number">
                         </label>
                         <button type="submit">Calcular</button>
-                        <p>Resultado: <span id="resultado-factorial"></span> </p>
+                        <p>Resultado: <span id="resultado-factorial"></span>
+                        </p>
                     </form>
                 </div>
-
-                <div class="form-fibonacci">
+                <!--formulario de la serie fibonacci-->
+                <div class="form-fibonacci" id="form-fibonacci">
                     <form id="fibonacci">
-                        <label for="fibonacci">Inserte un numero: 
-                            <input type="number" id="fibonacci-number" name="fibonacci">
+                        <h2>Calcular serie fibonacci</h2>
+                        <label for="fibonacci">Inserte un numero:
+                            <input type="number" id="fibonacci-number"
+                                name="fibonacci">
                         </label>
                         <button type="submit">Calcular</button>
-                        <p>Resultado: <span id="resultado-fibonacci"></span></p>
+                        <p><span id="resultado-fibonacci"></span></p>
                     </form>
                 </div>
-
-                <div class="form-mcd">
-                    <form id="mcd">
-                        <label for="mcd-1">Inserte el primer numero:
+                <!--formulario del mcd-->
+                <div class="form-mcd" id="form-mcd">
+                    <form id="mcd" novalidate>
+                        <h2>Maximo comun divisor</h2>
+                        <label for="mcd-1">Primer numero:
                             <input type="number" name="mcd1" id="mcd1">
                         </label>
-                        <label for="mcd-2">Inserte el segundo numero:
+                        <label for="mcd-2">Segundo numero:
                             <input type="number" name="mcd2" id="mcd2">
                         </label>
                         <button type="submit">Calcular</button>

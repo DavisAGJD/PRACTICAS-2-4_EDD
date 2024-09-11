@@ -1,8 +1,5 @@
 class Factorial {
     constructor(numero){
-        if (numero < 0 ){
-            alert("El numero debe ser mayor o igual a cero");
-        }
         this.numero = numero;
     }
 
